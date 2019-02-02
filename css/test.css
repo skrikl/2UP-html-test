@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
 /* запросы mobile first */
 
 /* стили для любой ширины */
@@ -8,25 +9,32 @@
 }
 
 .header {
+  border: 5px solid lime;
   width: 100%;
-  height: 29.6%;
-  background: url(../img/logo.png) no-repeat center;
+  height: 647px;
+  background-image: url(../img/sochi-2258855.png), url(../img/logo.png);
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover auto;	
+  
 }
 .header_big {
   font-family: Roboto Slab, serif;
   color: #0d3351;
-  font-size: 100px; /* Approximation due to font substitution */
+  font-size: 100px; 
   font-weight: 400;
-  line-height: 48px; /* Approximation due to font substitution */
+  line-height: 48px;
   text-align: center;
   text-transform: uppercase;
 }
 .header_small {
+  padding-top: 80px;
   font-family: Roboto Slab, serif;
   color: #0d3351;
-  font-size: 36px; /* Approximation due to font substitution */
+  font-size: 36px;
   font-weight: 400;
-  line-height: 48px; /* Approximation due to font substitution */
+  line-height: 48px;
   text-align: center;
 }
 /* стили для ширины крупнее мобильных */
@@ -34,10 +42,74 @@
 @media (min-width: 400px) {
  
 }
+
 .main__button {
+  display: block;
   background-color: #33c7fd;
-  width: 12.1%;
-  height: 2.2%;
+  width: 202px;
+  height: 47px;
+  margin: 0 auto;
+  font-family: Raleway;
+  color: #ffffff;
+  font-size: 14px; /* Approximation due to font substitution */
+  font-weight: 400;
+  line-height: 48px; /* Approximation due to font substitution */
+  text-align: center;
+}
+.content {
+  position: relative; /*это для подписи, удалить*/
+  width: 60%;
+  margin: 0 auto;
+  /*height: 500px;*/
+  background-color: #f3f3f3;
+  border: 5px solid black;
+  display: flex;
+  flex-flow: row wrap;
+}
+.content__element {
+  flex: 1;
+  background-color: #555;
+  min-width: 300px;
+  max-width: 400px;
+  height: 300px;
+  margin: 10px;
+}
+.footer {
+  border: 5px solid cyan;
+  display: flex;
+ 
+}
+.footer__menu {
+  display: flex;
+  flex-flow: column;
+  flex: 1;
+  width: 200px;
+  height: 100px;
+  border: 1px dashed red;
+  background-color: #ffffff;
+
+}
+.footer__menu a {
+  font-family: Raleway;
+  color: #0d3351;
+  font-size: 14px; /* Approximation due to font substitution */
+  font-weight: 400;
+  line-height: 24px; /* Approximation due to font substitution */
+  text-align: left;
+  text-decoration: none;
+}
+.footer__social {
+  flex: 1;
+  width: 200px;
+  height: 100px;
+  border: 1px dashed red;
+}
+.footer__contacts {
+  flex: 1;
+  flex-flow: column;
+  width: 200px;
+  height: 100px;
+  border: 1px dashed red;
 }
 /* стили для ширины крупнее фаблетов */
 /* стили для ширины 550 пикселов и выше */
