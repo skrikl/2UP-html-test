@@ -10,7 +10,9 @@
     margin: 0 auto;
     width: 1140px;
     display: flex;
-    /*border: 1px solid blue;*/
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    border: 1px solid blue;
 }
 .menu__button {
   background: linear-gradient(
@@ -19,7 +21,6 @@
             rgba(0,0,0,0) 90%, #0d3351 90%);
   width: 22px;
   height: 16px;
-  margin-bottom: 50px;
 }
 .header {
   position: relative;
@@ -31,6 +32,22 @@
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover auto;	
+}
+.flexend {
+  justify-content: flex-end;
+}
+.header__element {
+  margin-right: 0 5px;
+  display: flex;
+  font-family: Raleway;
+  color: #0d3351;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 48px;
+  border: 1px dashed yellow;
+}
+.flexformat__first_header_element {
+  margin-right: auto;
 }
 .header_big {
   font-family: Roboto Slab, serif;
@@ -99,7 +116,7 @@
   font-size: 14px; /* Approximation due to font substitution */
   font-weight: 400;
   line-height: 48px; /* Approximation due to font substitution */
-  text-align: center;
+  /*text-align: center;*/
 }
 .main__button:hover {
   background-color: #ffc7fd;
