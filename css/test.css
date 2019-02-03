@@ -37,22 +37,24 @@
   font-weight: 400;
   line-height: 48px;
   text-align: center;
+  letter-spacing: 3px;
 }
-.side {
+nav {
   position: absolute;
   top:10%;
-  left: 20%;
+  left: 15.25%;
   width: 420px;
   height: 413px;
 }
-.side ul {
+nav ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
-.side a {
-    text-decoration: none;
-}
+
 /*Menu display*/
 .menu a {
+    text-decoration: none;
     display: block;
     background-color: #0d3351;
     font-family: RobotoSlab;
@@ -61,6 +63,7 @@
     font-weight: 400;
     line-height: 48px;
     text-align: left;
+    padding-left: 40px;
 }
 .main__button {
   display: block;
@@ -93,7 +96,7 @@
   height: 300px;
   margin: 10px;
 }
-.footer {
+footer {
   border: 5px solid cyan;
   display: flex;
  
