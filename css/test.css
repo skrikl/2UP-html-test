@@ -30,7 +30,7 @@
   background-image: url(../img/sochi-2258855.png), url(../img/logo.png);
   background-blend-mode: overlay;
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: center 10%;
   background-size: cover auto;	
 }
 .flexend {
@@ -45,8 +45,9 @@
   font-weight: 400;
   line-height: 48px;
   border: 1px dashed yellow;
+  align-items: center;
 }
-.flexformat__first_header_element {
+.menu__first_element_formatting {
   margin-right: auto;
 }
 .header_big {
@@ -59,7 +60,7 @@
   text-transform: uppercase;
 }
 .header_small {
-  padding-top: 80px;
+  padding-top: 50px;
   font-family: Roboto Slab, serif;
   color: #0d3351;
   font-size: 36px;
@@ -72,7 +73,7 @@
   background-color: #0d3351;
   position: absolute;
   top:-100%;
-  left: 15.25%;
+  left: 15.5%;
   width: 420px;
   opacity: 0;
   transition: 0.5s all ease 0.15s;
@@ -80,7 +81,7 @@
 }
 .menu__button:hover .nav {
     opacity: 1;
-    top:5%;
+    top:8%;
 }
 .nav ul {
     list-style: none;
@@ -116,7 +117,7 @@
   font-size: 14px; /* Approximation due to font substitution */
   font-weight: 400;
   line-height: 48px; /* Approximation due to font substitution */
-  /*text-align: center;*/
+  text-align: center;
 }
 .main__button:hover {
   background-color: #ffc7fd;
