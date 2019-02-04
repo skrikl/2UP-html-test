@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
-@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Rubik');
 /* запросы mobile first */
 
 /* стили для любой ширины */
@@ -7,12 +7,11 @@
 	box-sizing: border-box;
 }
 .main__container {
-    margin: 0 auto;
-    width: 1140px;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: flex-start;
-    border: 1px solid blue;
+  margin: 0 auto;
+  width: 1140px;
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-start;
 }
 .menu__button {
   background: linear-gradient(
@@ -24,7 +23,6 @@
 }
 .header {
   position: relative;
-  border: 5px solid lime;
   width: 100%;
   height: 647px;
   background-image: url(../img/sochi-2258855.png), url(../img/logo.png);
@@ -37,14 +35,15 @@
   justify-content: flex-end;
 }
 .header__element {
-  margin-right: 0 5px;
+  padding: 0 15px;
+  margin: 0 10px;
   display: flex;
-  font-family: Raleway;
+  position: relative;
+  font-family: Rubik, sans-serif;
   color: #0d3351;
   font-size: 14px;
   font-weight: 400;
   line-height: 48px;
-  border: 1px dashed yellow;
   align-items: center;
 }
 .menu__first_element_formatting {
@@ -55,12 +54,12 @@
   color: #0d3351;
   font-size: 100px; 
   font-weight: 400;
-  line-height: 48px;
+  line-height: 10px;
   text-align: center;
   text-transform: uppercase;
 }
 .header_small {
-  padding-top: 50px;
+  padding-top: 60px;
   font-family: Roboto Slab, serif;
   color: #0d3351;
   font-size: 36px;
@@ -72,8 +71,8 @@
 .nav {
   background-color: #0d3351;
   position: absolute;
-  top:-100%;
-  left: 15.5%;
+  top:-3000%;
+  left: 30%;
   width: 420px;
   opacity: 0;
   transition: 0.5s all ease 0.15s;
@@ -81,7 +80,7 @@
 }
 .menu__button:hover .nav {
     opacity: 1;
-    top:8%;
+    top: 100%;
 }
 .nav ul {
     list-style: none;
@@ -92,7 +91,7 @@
 .menu a {
     text-decoration: none;
     display: block;
-    font-family: RobotoSlab;
+    font-family: Roboto Slab;
     color: #ffffff;
     font-size: 18px;
     font-weight: 400;
@@ -112,34 +111,79 @@
   width: 202px;
   height: 47px;
   margin: 0 auto;
-  font-family: Raleway;
+  font-family: Rubik, sans-serif;
   color: #ffffff;
-  font-size: 14px; /* Approximation due to font substitution */
+  font-size: 14px;
   font-weight: 400;
-  line-height: 48px; /* Approximation due to font substitution */
+  line-height: 48px;
   text-align: center;
+  transition: 1s;
 }
 .main__button:hover {
-  background-color: #ffc7fd;
+  background-color: #0d3351;
+}
+/*Нужно ли делать обертку для главной секции, или ограничиться main__container и background на весь документ?*/
+html { 
+  background-color: #f3f3f3;
 }
 .content {
-  position: relative; /*это для подписи, удалить*/
-  width: 60%;
-  margin: 0 auto;
-  /*height: 500px;*/
-  background-color: #f3f3f3;
-  border: 5px solid black;
-  display: flex;
-  flex-flow: row wrap;
+  position: relative;
 }
 .content__element {
-  flex: 1;
-  background-color: #555;
-  min-width: 300px;
-  max-width: 400px;
-  height: 300px;
+  position: relative;
+  width: 555px;
+  background-color: #fff;
   margin: 10px;
+  display: block;
+  padding-left: 30px;
 }
+.content-img__full-height {
+  height: 437px;
+  margin-left: -30px;
+}
+.content-img__half-height {
+  height: 215px;
+  margin-left: -30px;
+}
+.content-img__quarter-height {
+  height: 113px;
+  margin-left: -30px;
+}
+.content__header {
+  font-family: Roboto Slab;
+  color: #00a2dd;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+  padding-right: 20px;
+  display: inline-block; /*This is to use icons__list class*/
+  position: relative; /*This is to use icons__list class*/
+}
+.content__text {
+  font-family: Rubik, sans-serif;
+  color: #0d3351;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.content__anapa {
+  background: url(../img/lighthouse-1319560.png) no-repeat;
+}
+.content__durso {
+  background: url(../img/sea-3141781_1920.png) no-repeat;
+}
+.content__gelendzik {
+  background: url(../img/gelendzik.png) no-repeat;
+}
+.content__novorossiysk {
+  background: url(../img/novorossiysk-211521_1920.png) no-repeat;
+}
+.content__sochi {
+  background: url(../img/sochi-2461968_1920.png) no-repeat;
+}
+
+
 footer {
   border: 5px solid cyan;
   display: flex;
@@ -155,7 +199,7 @@ footer {
   background-color: #ffffff;
 }
 .footer__menu a {
-  font-family: Raleway;
+  font-family: Rubik, sans-serif;
   color: #0d3351;
   font-size: 14px; /* Approximation due to font substitution */
   font-weight: 400;
@@ -175,6 +219,96 @@ footer {
   width: 200px;
   height: 100px;
   border: 1px dashed red;
+}
+.icons__lk {
+  background: url(../img/lk.png) no-repeat 0% center;
+}
+.icons__list::after {
+  content: " ";
+  border: 5px solid black;
+  border-color: #0d3351 transparent transparent transparent;
+  position: absolute;
+  right: 0%;
+  top: 45%;
+}
+.icons__right-arrow::after {
+  content: " ";
+  border: 5px solid black;
+  border-color: transparent transparent transparent #00a2dd;
+  position: absolute;
+  right: 0%;
+  top: 40%;
+}
+.header__contact {
+  flex-basis: 200px;
+  display: block;
+  line-height: 1em;
+  padding-top: 12px;
+}
+.content__columns {
+  flex-flow: column wrap;
+  max-height: 1100px;
+}
+.content__price {
+  font-family: Roboto Slab;
+  font-weight: bold;
+  font-size: 28px;
+  color: red;
+  /*height: 40px;*/
+  padding: 20px 0;
+}
+.content__main-header {
+  font-family: Roboto Slab;
+  color: #0d3351;
+  font-size: 36px;
+  line-height: 48px;
+  text-align: center;
+  padding-top: 80px;
+}
+.content__small-header {
+  font-family: Rubik, sans-serif;
+  color: #0d3351;
+  font-size: 14px; 
+  font-weight: 400;
+  /*line-height: 24px;*/
+  text-align: center;
+  margin-bottom: 30px;
+}
+.content__sticker_sale {
+  position: absolute;
+  background: url(../img/tag_sale.svg) no-repeat;
+  height: 100px;
+  width: 90px;
+  top: -1.5%;
+  right: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: Rubik;
+  color: #ffffff;
+  font-size: 14px;
+  
+  
+ 
+}
+.content__sticker_promo {
+  position: absolute;
+  background: url(../img/tag_promo.svg) no-repeat;
+  height: 100px;
+  width: 90px;
+  top: -3%;
+  right: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: Rubik;
+  color: #ffffff;
+  font-size: 14px;
+
 }
 /* стили для ширины крупнее фаблетов */
 /* стили для ширины 550 пикселов и выше */
