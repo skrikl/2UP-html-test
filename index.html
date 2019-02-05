@@ -32,9 +32,9 @@
 			</div>
 		</div>
 		<!-- Elements of the top line menu -->
-		<div class="header__element icons__lk icons__list">Личный кабинет</div>
-		<div class="header__element icons__list">Рубль</div>
-		<div class="header__element icons__list">Ru</div>
+		<div class="header__element icons__lk icons__menu-list">Личный кабинет</div>
+		<div class="header__element icons__menu-list">Рубль</div>
+		<div class="header__element icons__menu-list">Ru</div>
 		<div class="header__element header__contact">
 			<strong>8 800 500-61-05</strong>
 		  <span>Круглосуточная поддержка</span>
@@ -50,7 +50,7 @@
 <!-- Content section headers-->
 <!-- todo Нужен ли тут div для второго заголовка? -->
 	<h1 class="content__main-header" id="select">Каталог круизов</h1>
-	<div class="content__small-header">Сортировать круизы по цене</div>
+	<div class="content__small_header icons__list">Сортировать круизы по цене</div>
 	
 	<!-- Size container used to limit content width throughout the whole page -->
 	<div class="main__container content__columns">
@@ -66,8 +66,8 @@
 			<div class="content__textbox">
 				<!-- Product card headers, description, etc. -->
 				<h3 class="content__header icons__content-arrow">Морской круиз в Анапу</h3>
-				<div class="content__text">Маршрут: Сочи-Лазаревское-Геленджик-Анапа</div>
-				<div class="content__text">Продолжительность: 10 ч. 0 мин.</div>
+				<div class="content__text"><span class="text__emphasis">Маршрут:</span> Сочи-Лазаревское-Геленджик-Анапа</div>
+				<div class="content__text"><span class="text__emphasis">Продолжительность:</span> 10 ч. 0 мин.</div>
 				<div class="content__price">49 000	руб.</div>
 		</div>
 		</div>
@@ -76,8 +76,8 @@
 			<div class="content-img__novorossiysk content-img__half-height "></div>
 			<div class="content__textbox">
 				<h3 class="content__header icons__content-arrow">Морской круиз в Новороссийск</h3>
-				<div class="content__text">Маршрут: Сочи-Геленджик-Новороссйиск-Геленджик-Сочи</div>
-				<div class="content__text">Продолжительность: 13 ч. 0 мин.</div>	
+				<div class="content__text"><span class="text__emphasis">Маршрут:</span> Сочи-Геленджик-Новороссйиск-Геленджик-Сочи</div>
+				<div class="content__text"><span class="text__emphasis">Продолжительность:</span> 13 ч. 0 мин.</div>	
 				<div class="content__price">14 800	руб.</div>
 			</div>
 		</div>
@@ -88,9 +88,10 @@
 			</div>
 			<div class="content__textbox">
 				<h3 class="content__header icons__content-arrow">Обзорная морская прогулка с экскурсией</h3>
-				<div class="content__text">Маршрут: Сочи-Адлер-Сочи (без высадки)</div>
-				<div class="content__text">Продолжительность: 1 ч. 0 мин.</div>
+				<div class="content__text"><span class="text__emphasis">Маршрут:</span> Сочи-Адлер-Сочи (без высадки)</div>
+				<div class="content__text"><span class="text__emphasis">Продолжительность:</span> 1 ч. 0 мин.</div>
 				<div class="content__price">5 000	руб.</div>
+				<div class="content__price content__price_discount">15 000	руб.</div>
 		  </div>
 		</div>
 		<!-- Same structure for the next product card -->
@@ -100,9 +101,10 @@
 			</div>
 			<div class="content__textbox">
 				<h3 class="content__header icons__content-arrow">Морская прогулка в Геленджик</h3>
-				<div class="content__text">Маршрут: Сочи-Туапсе-Геленджик</div>
-				<div class="content__text">Продолжительность: 12 ч. 30 мин.</div>
+				<div class="content__text"><span class="text__emphasis">Маршрут:</span> Сочи-Туапсе-Геленджик</div>
+				<div class="content__text"><span class="text__emphasis">Продолжительность:</span> 12 ч. 30 мин.</div>
 				<div class="content__price">7 000	руб.</div>
+				<div class="content__price content__price_discount">10 000	руб.</div>
 			</div>
 		</div>
 		<!-- Same structure for the next product card -->	
@@ -110,28 +112,40 @@
 			<div class="content-img__durso content-img__half-height"></div>
 			<div class="content__textbox">
 				<h3 class="content__header icons__content-arrow">Морская прогулка в Абрау-Дюрсо</h3>	
-				<div class="content__text">Маршрут: Сочи-Абрау-Дюрсо</div>
-				<div class="content__text">Продолжительность: 11 ч. 0 мин.</div>
+				<div class="content__text"><span class="text__emphasis">Маршрут:</span> Сочи-Абрау-Дюрсо</div>
+				<div class="content__text"><span class="text__emphasis">Продолжительность:</span> 11 ч. 0 мин.</div>
 				<div class="content__price">14 800	руб.</div>
       </div>		
 		</div>
 
 	</div>
+	<div class="main__button icons__button-list">Больше круизов </div>
 
 <!-- Footer section -->
 <footer>
-  <div class="footer__menu">
-  	<a href>Вход для партнеров</a>
-  	<a href>О компании</a>
-  	<a href>Контакты</a>
-  </div>
-  <div class="footer__social">
-  	Будь на связи:
-  </div>
-  <div class="footer__contacts">
-  	<div>8 800 500-61-05</div>
-  	<div>Круглосуточная поддержка</div>
-  	<div>© 2016 OOO «Городские Круизы»</div>
+	<div class="main__container">
+	  
+	  <div class="footer__menu">
+	  	<a href>Вход для партнеров</a>
+	  	<a href>О компании</a>
+	  	<a href>Контакты</a>
+	  </div>
+	  
+	  <div class="footer__social">
+	  	Будь на связи:	
+	  	<div class="social__bar">
+	  		<div class="icons__vk"></div>
+		  	<div class="icons__ok"></div>
+		  	<div class="icons__youtube"></div>
+		  	<div class="icons__insta"></div>
+		  </div>
+	  </div>
+
+	  <div class="footer__contacts">
+	    <div class="text__phone">8 800 500-61-05</div>
+		  <div class="text__support">Круглосуточная поддержка</div>
+		  <div class="text__brand">© 2016 OOO «Городские Круизы»</div>
+	  </div>
   </div>
 </footer>
 </body>
