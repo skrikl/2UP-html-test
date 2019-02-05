@@ -14,105 +14,6 @@ html {
   margin: 0 auto;
   width: 1140px;
 }
-.menu__button {
-  background: linear-gradient(
-    to top, #0d3351 10%, rgba(0,0,0,0) 10%, rgba(0,0,0,0) 45%, 
-            #0d3351 45%, #0d3351 55%, rgba(0,0,0,0) 55%, 
-            rgba(0,0,0,0) 90%, #0d3351 90%);
-  width: 22px;
-  height: 16px;
-}
-.header {
-  position: relative;
-  width: 100%;
-  height: 647px;
-  background-image: url(../img/sochi-2258855.png), url(../img/logo.png);
-  background-blend-mode: overlay;
-  background-repeat: no-repeat;
-  background-position: center 10%;
-  background-size: cover auto ;	
-}
-.flexend {
-  justify-content: flex-end;
-}
-.header__element {
-  padding: 0 15px;
-  margin: 0 10px;
-  display: flex;
-  position: relative;
-  font-family: Rubik, sans-serif;
-  color: #0d3351;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 48px;
-  align-items: center;
-}
-.header__contact {
-  flex-basis: 200px;
-  display: block;
-  font-size: 12px;
-  line-height: 1em;
-  padding-top: 12px;
-}
-.menu__first_element_formatting {
-  margin-right: auto;
-}
-.header_big {
-  font-family: Roboto Slab, serif;
-  color: #0d3351;
-  font-size: 100px; 
-  font-weight: 400;
-  line-height: 10px;
-  text-align: center;
-  text-transform: uppercase;
-}
-.header_small {
-  padding-top: 60px;
-  font-family: Roboto Slab, serif;
-  color: #0d3351;
-  font-size: 36px;
-  font-weight: 400;
-  line-height: 48px;
-  text-align: center;
-  letter-spacing: 3px;
-}
-.nav {
-  background-color: #0d3351;
-  position: absolute;
-  top:-1000%;
-  left: 30%;
-  width: 420px;
-  opacity: 0;
-  transition: 0.5s all ease 0.15s;
-  padding: 60px 0;
-}
-.menu__button:hover .nav {
-    opacity: 1;
-    top: 100%;
-}
-.nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-/*Menu display*/
-.menu a {
-    text-decoration: none;
-    display: block;
-    font-family: Roboto Slab;
-    color: #ffffff;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 48px;
-    text-align: left;
-    padding-left: 40px;
-    transition: 1s all;
-}
-
-.menu a:hover {
-  background-color: #33c7fd;
-  padding-left: 30px;
-}
 .main__button {
   display: block;
   position: relative;
@@ -133,6 +34,101 @@ html {
 .main__button:hover {
   background-color: #0d3351;
 }
+.header {
+  position: relative;
+  width: 100%;
+  height: 647px;
+  background-image: url(../img/sochi-2258855.png), url(../img/logo.png);
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  background-position: center 10%;
+  background-size: cover auto ;	/*CSS validator doesn't like it, but it works. 
+  Can't you tell me why?*/
+}
+.header__element {
+  padding: 0 15px;
+  margin: 0 10px;
+  display: flex;
+  position: relative;
+  font-family: Rubik, sans-serif;
+  color: #0d3351;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 48px;
+  align-items: center;
+}
+.header__contact {
+  flex-basis: 200px;
+  display: block;
+  font-size: 12px;
+  line-height: 1em;
+  padding-top: 12px;
+}
+.header__main-header-text {
+  font-family: Roboto Slab, serif;
+  color: #0d3351;
+  font-size: 100px; 
+  font-weight: 400;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.header__secondary-header-text {
+  padding-top: 70px;
+  font-family: Roboto Slab, serif;
+  color: #0d3351;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 48px;
+  text-align: center;
+  letter-spacing: 3px;
+}
+.nav {
+  background-color: #0d3351;
+  position: absolute;
+  top:-1000%;
+  left: 30%;
+  width: 420px;
+  opacity: 0;
+  transition: 0.5s all ease 0.15s;
+  padding: 60px 0;
+}
+.nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.menu__button:hover .nav {
+    opacity: 1;
+    top: 100%;
+}
+.menu__first_element_formatting {
+  margin-right: auto;
+}
+.menu__button {
+  background: linear-gradient(
+    to top, #0d3351 10%, rgba(0,0,0,0) 10%, rgba(0,0,0,0) 45%, 
+            #0d3351 45%, #0d3351 55%, rgba(0,0,0,0) 55%, 
+            rgba(0,0,0,0) 90%, #0d3351 90%);
+  width: 22px;
+  height: 16px;
+}
+.menu a {
+    text-decoration: none;
+    display: block;
+    font-family: Roboto Slab;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 48px;
+    text-align: left;
+    padding-left: 40px;
+    transition: 1s all;
+}
+.menu a:hover {
+  background-color: #33c7fd;
+  padding-left: 30px;
+}
 .content {
   position: relative;
 }
@@ -142,15 +138,6 @@ html {
   background-color: #fff;
   margin: 10px 15px;
   display: block;  
-}
-.content-img__full-height {
-  height: 437px;  
-}
-.content-img__half-height {
-  height: 215px;  
-}
-.content-img__quarter-height {
-  height: 113px;
 }
 .content__header {
   font-family: Roboto Slab;
@@ -174,6 +161,81 @@ html {
   font-weight: 400;
   line-height: 24px;
 }
+.content__columns {
+  flex-flow: column wrap;
+  max-height: 1100px;
+}
+.content__price {
+  display: inline-block;
+  font-family: Roboto Slab;
+  font-weight: bold;
+  font-size: 28px;
+  color: #0d3351;
+  padding: 20px 0;
+}
+.content__price_discount {
+  font-size: 18px;
+  color: #aaa;
+  padding-left: 20px;
+  text-decoration: line-through;
+}
+.content__main-header-text {
+  font-family: Roboto Slab;
+  color: #0d3351;
+  font-size: 36px;
+  line-height: 48px;
+  text-align: center;
+  padding-top: 80px;
+}
+.content__secondary-header-text {
+  color: #0d3351;
+  font-family: Rubik, sans-serif;
+  font-size: 18px; 
+  position: relative;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.content__sticker_sale {
+  position: absolute;
+  background: url(../img/tag_sale.svg) no-repeat;
+  height: 100px;
+  width: 90px;
+  top: -1.5%;
+  right: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: Rubik;
+  color: #ffffff;
+  font-size: 14px;
+}
+.content__sticker_promo {
+  position: absolute;
+  background: url(../img/tag_promo.svg) no-repeat;
+  height: 100px;
+  width: 90px;
+  top: -3%;
+  right: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: Rubik;
+  color: #ffffff;
+  font-size: 14px;
+}
+.content-img__full-height {
+  height: 437px;  
+}
+.content-img__half-height {
+  height: 215px;  
+}
+.content-img__quarter-height {
+  height: 113px;
+}
 .content-img__anapa {
   background: url(../img/lighthouse-1319560.png) no-repeat;
 }
@@ -189,7 +251,7 @@ html {
 .content-img__sochi {
   background: url(../img/sochi-2461968_1920.png) no-repeat;
 }
-footer {
+.footer {
   background-color: #fff;
   font-family: Rubik, sans-serif;
   color: #0d3351;
@@ -221,6 +283,9 @@ footer {
 .footer__contacts {
   flex: 0 0 225px;
   align-self: center;
+}
+.social__bar {
+  display: flex;
 }
 .text__phone {
   font-weight: bold;
@@ -265,97 +330,25 @@ footer {
 }
 .icons__content-arrow::after {
   content: "";
-  font-size: 0; /*to make border display independant*/
+  font-size: 0; /*to make border display independent*/
   border: 6px solid blue;
   border-color: transparent transparent transparent #00a2dd;
   position: relative;
   bottom: 6px;
   left: 6px;
 }
-.content__columns {
-  flex-flow: column wrap;
-  max-height: 1100px;
-}
-.content__price {
-  display: inline-block;
-  font-family: Roboto Slab;
-  font-weight: bold;
-  font-size: 28px;
-  color: #0d3351;
-  padding: 20px 0;
-}
-.content__price_discount {
-  font-size: 18px;
-  color: #aaa;
-  padding-left: 20px;
-  text-decoration: line-through;
-}
-.content__main-header {
-  font-family: Roboto Slab;
-  color: #0d3351;
-  font-size: 36px;
-  line-height: 48px;
-  text-align: center;
-  padding-top: 80px;
-}
-.content__small_header {
-  color: #0d3351;
-  font-family: Rubik, sans-serif;
-  font-size: 18px; 
-  position: relative;
-  text-align: center;
-  margin-bottom: 50px;
-}
-.content__sticker_sale {
-  position: absolute;
-  background: url(../img/tag_sale.svg) no-repeat;
-  height: 100px;
-  width: 90px;
-  top: -1.5%;
-  right: 5%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-transform: uppercase;
-  text-align: center;
-  font-family: Rubik;
-  color: #ffffff;
-  font-size: 14px;
-}
-.content__sticker_promo {
-  position: absolute;
-  background: url(../img/tag_promo.svg) no-repeat;
-  height: 100px;
-  width: 90px;
-  top: -3%;
-  right: 5%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-transform: uppercase;
-  text-align: center;
-  font-family: Rubik;
-  color: #ffffff;
-  font-size: 14px;
-}
-.social__bar {
-  display: flex;
-}
 .icons__insta, .icons__vk
 , .icons__ok, .icons__youtube{
   background: url(../img/sprites.png) no-repeat;
 }
-
 .icons__insta {
   background-position: -119px -19px;
   width: 32px;
   height: 32px;
 }
-
 .icons__insta:hover {
   background-position: -120px -51px ;
 }
-
 .icons__vk {
   background-position: 0 -19px;
   width: 32px;
@@ -366,7 +359,6 @@ footer {
   width: 32px;
   height: 32px;
 }
-
 .icons__ok {
   background-position: -40px -19px;
   width: 32px;
@@ -403,14 +395,14 @@ footer {
   background-position:center 20%;
   background-size: cover auto;  
 }
-.header_big {
+.header__main-header-text {
   margin-top: -20px;
-  font-size: 60px; 
+  font-size: 66px; 
   font-weight: 400;
-  line-height: 60px;
+  line-height: 70px;
 }
-.header_small {
-  font-size: 20px; 
+.header__secondary-header-text {
+  font-size: 24px; 
   padding-top: 150px;
 }
 .main__button {
@@ -492,7 +484,9 @@ footer {
   align-self: center;
 }
 }
-
+/***********************************************
+****************Tablet styles*******************
+/***********************************************/
 @media (min-width: 320px) and (max-width: 749px){
   
 body {
@@ -540,14 +534,14 @@ body {
   background-position:center 5%;
   background-size: cover auto;  
 }
-.header_big {
+.header__main-header-text {
   margin-top: -20px;
   font-size: 60px; 
   font-weight: 400;
   line-height: 60px;
 }
-.header_small {
-  font-size: 20px; 
+.header__secondary-header-text {
+  font-size: 24px; 
 }
 .main__button {
   font-size: 18px;
@@ -607,7 +601,6 @@ body {
   flex: 0;
   text-align: center;
   margin: 16px 0 30px 0;
-
 }
 .text__support {
   font-size: 12px;
@@ -617,21 +610,4 @@ body {
   font-size: 20px;
 }
 }
-/* стили для ширины крупнее планшетов */
-
-/* стили для ширины 750 пикселов и выше */
-@media (min-width: 750px) {
-  
-}
-
-/* стили для ширины крупнее компьютерных мониторов */
-/* стили для ширины 1000 пикселов и выше */
-@media (min-width: 1000px) {
-  
-}
-
-/* стили для ширины крупнее компьютерных HD-мониторов */
-/* стили для ширины 1200 пикселов и выше */
-@media (min-width: 1200px) {
-
-}
+/*   Вот и все. Первый макет сверстан)   */
