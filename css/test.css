@@ -142,21 +142,17 @@ html {
   position: relative;
   width: 555px;
   background-color: #fff;
-  margin: 10px;
-  display: block;
-  padding-left: 30px;
+  margin: 10px 15px;
+  display: block;  
 }
 .content-img__full-height {
-  height: 437px;
-  margin-left: -30px;
+  height: 437px;  
 }
 .content-img__half-height {
-  height: 215px;
-  margin-left: -30px;
+  height: 215px;  
 }
 .content-img__quarter-height {
   height: 113px;
-  margin-left: -30px;
 }
 .content__header {
   font-family: Roboto Slab;
@@ -166,8 +162,12 @@ html {
   line-height: 28px;
   text-align: left;
   padding-right: 20px;
-  display: inline-block; /*This is to use icons__list class*/
+  display: inline; /*This is to use icons__list class*/
   position: relative; /*This is to use icons__list class*/
+}
+.content__textbox {
+  height: 191px;
+  padding-left: 30px;
 }
 .content__text {
   font-family: Rubik, sans-serif;
@@ -176,19 +176,19 @@ html {
   font-weight: 400;
   line-height: 24px;
 }
-.content__anapa {
+.content-img__anapa {
   background: url(../img/lighthouse-1319560.png) no-repeat;
 }
-.content__durso {
+.content-img__durso {
   background: url(../img/sea-3141781_1920.png) no-repeat;
 }
-.content__gelendzik {
+.content-img__gelendzik {
   background: url(../img/gelendzik.png) no-repeat;
 }
-.content__novorossiysk {
+.content-img__novorossiysk {
   background: url(../img/novorossiysk-211521_1920.png) no-repeat;
 }
-.content__sochi {
+.content-img__sochi {
   background: url(../img/sochi-2461968_1920.png) no-repeat;
 }
 footer {
@@ -237,13 +237,14 @@ footer {
   right: 0%;
   top: 45%;
 }
-.icons__right-arrow::after {
-  content: " ";
-  border: 5px solid black;
+.icons__content-arrow::after {
+  content: "";
+  font-size: 0; /*to make border display independant*/
+  border: 6px solid blue;
   border-color: transparent transparent transparent #00a2dd;
-  position: absolute;
-  right: 0%;
-  top: 40%;
+  position: relative;
+  bottom: 6px;
+  left: 6px;
 }
 .content__columns {
   flex-flow: column wrap;
@@ -309,13 +310,94 @@ footer {
 /***********************************************
 ****************Mobile styles*******************
 /***********************************************/
-@media (min-width: 720px) and (max-width: 1300px){
-  * {
-    display: none;
-  }
+@media (min-width: 750px) and (max-width: 1300px){
+.menu a {
+    padding-left: 30px;
+}
+.menu a:hover {
+  padding-left: 15px;
+}
+.header {
+  height: 583px;
+  position: relative;
+  width: 100%;
+  background-image: url(../img/sochi-2258855.png), url(../img/logo.png);
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  background-position:center 20%;
+  background-size: cover auto;  
+}
+.header_big {
+  margin-top: -20px;
+  font-size: 60px; 
+  font-weight: 400;
+  line-height: 60px;
+}
+.header_small {
+  font-size: 20px; 
+  padding-top: 150px;
+}
+.main__button {
+  font-size: 18px;
+}
+.main__container {
+  width: 90%;
+}
+.content__columns {
+  flex-flow: column wrap;
+}
+.content__element {
+  position: relative;
+  width: 45%;
+  height: 500px;
+  min-width: 35%;
+  background-color: #fff;
+  margin: 15px;
+  display: block;
+  padding-left: 30px;
+}
+.content__columns {
+  flex-flow: column wrap;
+  max-height: 1800px;
+  align-items: baseline;
+}
+.content__header {
+  font-size: 22px;
+  width: 230px;
+}
+.content__text {
+  font-family: Rubik, sans-serif;
+  color: #0d3351;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.content__price {
+  position: absolute;
+  font-family: Roboto Slab;
+  font-weight: bold;
+  font-size: 28px;
+  color: red;
+  bottom: 0%;
+  left: 30px;
+}
+.content__textbox {
+  height: 191px;
+  padding-left: 0px;
+}
+.content-img__full-height,
+.content-img__half-height,
+.content-img__quarter-height {
+  height: 272px;
+  margin-left: -30px;
+  background-size: cover;
+  /*42% is a workaround to fit all test images better.
+  Wouldn't be used with full-sized images*/
+  background-position: 42% center; 
+}
 }
 
-@media (min-width: 320px) and (max-width: 719px){
+@media (min-width: 320px) and (max-width: 749px){
   
 body {
   display: flex;
@@ -328,6 +410,9 @@ body {
 }
 .menu a {
     padding-left: 20px;
+}
+.menu a:hover {
+  padding-left: 10px;
 }
 .nav {
   background-color: #0d3351;
@@ -385,9 +470,31 @@ body {
   display: block;
   padding-left: 30px;
 }
+.content__header {
+  font-size: 24px;
+  width: 230px;
+}
+.content__text {
+  font-family: Rubik, sans-serif;
+  color: #0d3351;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
 .content__columns {
   flex-flow: column wrap;
-  max-height: 2500px;
+  max-height: 5500px;
+}
+.content-img__full-height,
+.content-img__half-height,
+.content-img__quarter-height {
+  height: 229px;
+  margin-left: -30px;
+  background-size: cover;
+  /*42% is a workaround to fit all test images better.
+  Wouldn't be used with full-sized images*/
+  background-position: 42% center; 
+}
 /* стили для ширины крупнее планшетов */
 
 /* стили для ширины 750 пикселов и выше */
