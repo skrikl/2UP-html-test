@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
 @import url('https://fonts.googleapis.com/css?family=Rubik');
-/* Desktop layout*/
 * {
 	box-sizing: border-box;
 }
@@ -38,12 +37,12 @@ html {
   position: relative;
   width: 100%;
   height: 647px;
-  background-image: url(../img/sochi-2258855.png), url(../img/logo.png);
+  background-image: url(../img/sochi-2258855.png),
+                    url(../img/logo.png);
   background-blend-mode: overlay;
   background-repeat: no-repeat;
   background-position: center 10%;
-  background-size: cover auto ;	/*CSS validator doesn't like it, but it works. 
-  Can't you tell me why?*/
+  background-size: cover auto;
 }
 .header__element {
   padding: 0 15px;
@@ -264,7 +263,7 @@ html {
   height: 100px;
   padding-left: 15px;
   justify-content: center;
-  }
+}
 .footer__menu a {
   font-family: Rubik, sans-serif;
   color: #0d3351;
@@ -290,6 +289,13 @@ html {
 .text__phone {
   font-weight: bold;
   letter-spacing: 1px;
+}
+.text__link,
+.text__link:visited,
+.text__link:hover,
+.text__link:active {
+  text-decoration: none;
+  color: inherit;
 }
 .text__support {
   font-size: 12px;
@@ -337,8 +343,8 @@ html {
   bottom: 6px;
   left: 6px;
 }
-.icons__insta, .icons__vk
-, .icons__ok, .icons__youtube{
+.icons__insta, .icons__vk,
+.icons__ok, .icons__youtube {
   background: url(../img/sprites.png) no-repeat;
 }
 .icons__insta {
@@ -375,8 +381,9 @@ html {
 .icons__youtube:hover {
   background-position: -80px -52px ;
 }
+
 /***********************************************
-****************Mobile styles*******************
+****************Tablet styles*******************
 /***********************************************/
 @media (min-width: 750px) and (max-width: 1300px){
 .menu a {
@@ -389,7 +396,8 @@ html {
   height: 583px;
   position: relative;
   width: 100%;
-  background-image: url(../img/sochi-2258855.png), url(../img/logo.png);
+  background-image: url(../img/sochi-2258855.png), 
+                    url(../img/logo.png);
   background-blend-mode: overlay;
   background-repeat: no-repeat;
   background-position:center 20%;
@@ -460,8 +468,6 @@ html {
   height: 272px;
   margin-left: -30px;
   background-size: cover;
-  /*42% is a workaround to fit all test images better.
-  Wouldn't be used with full-sized images*/
   background-position: 42% center; 
 }
 .footer__menu {
@@ -484,8 +490,9 @@ html {
   align-self: center;
 }
 }
+
 /***********************************************
-****************Tablet styles*******************
+****************Mobile styles*******************
 /***********************************************/
 @media (min-width: 320px) and (max-width: 749px){
   
@@ -587,8 +594,6 @@ body {
   height: 229px;
   margin-left: -30px;
   background-size: cover;
-  /*42% is a workaround to fit all test images better.
-  Wouldn't be used with full-sized images*/
   background-position: 42% center; 
 }
 .footer__menu {
@@ -610,4 +615,3 @@ body {
   font-size: 20px;
 }
 }
-/*   Вот и все. Первый макет сверстан)   */

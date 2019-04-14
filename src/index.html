@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/test.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet"> 
+  <title>skrikl || Тестовое задание</title>
+</head>
+	<body>
+	<!-- Wrapper for backround image of header section -->
+		<header class="header">
+			<!-- Size container used to limit content width throughout the whole page -->
+			<div class="main__container">
+				<!-- Menu section. Menu is child of the button to change visibility via :hover on button  -->
+				<div class="header__element menu__first_element_formatting">
+					<div class="menu__button">
+						<nav class="nav"> 
+							<ul class="menu"> 
+								<li class="menu__element"><a href="#">Популярные маршруты</a></li> 
+								<li class="menu__element"><a href="#">Расписание рейсов</a></li>
+								<li class="menu__element"><a href="#">Забронированные рейсы</a></li> 
+								<li class="menu__element"><a href="#">Вход для партнеров</a></li>
+								<li class="menu__element"><a href="#">О компании</a></li>
+								<li class="menu__element"><a href="#">Контакты</a></li>
+								</ul> 
+						</nav>
+					</div>
+				</div>
+				<!-- Elements of the top line menu -->
+				<div class="header__element icons__lk icons__menu-list">Личный кабинет</div>
+				<div class="header__element icons__menu-list">Рубль</div>
+				<div class="header__element icons__menu-list">Ru</div>
+				<div class="header__element header__contact">
+					<a class="text__phone text__link" href="tel:88005006105">8 800 500-61-05</a>
+					<a class="text__link" href="email:support@bscruise.ru">Круглосуточная поддержка</a>
+				</div>
+			</div>
+		<h1 class="header__secondary-header-text">Морские прогулки</h1>
+		<h1 class="header__main-header-text">по чёрному морю</h1>	
+		<a href="#select" class="main__button">Выбрать круиз</a>
+		</header>
+
+		<!-- Content section headers-->
+		<header>
+			<h1 class="content__main-header-text" id="select">Каталог круизов</h1>
+			<div class="content__secondary-header-text icons__list">Сортировать круизы по цене</div>
+		</header>	
+		<!-- Size container used to limit content width throughout the whole page -->
+		<div class="main__container content__columns">
+			<!-- Content elemets represents product cards -->
+			<!-- Product card wrapper -->
+			<section class="content__element"> 
+				<!-- Product card top image background and size setter -->
+				<div class="content-img__anapa content-img__full-height">
+					<!-- Sales sticker if needed -->
+					<div class="content__sticker_sale">Хит продаж</div>
+				</div>
+				<!-- Product card text-area size setter-->
+				<div class="content__textbox">
+					<!-- Product card headers, description, etc. -->
+					<h3 class="content__header icons__content-arrow">Морской круиз в Анапу</h3>
+					<div class="content__text"><span class="text__emphasis">Маршрут:</span> Сочи-Лазаревское-Геленджик-Анапа</div>
+					<div class="content__text"><span class="text__emphasis">Продолжительность:</span> 10 ч. 0 мин.</div>
+					<div class="content__price">49 000	руб.</div>
+			</div>
+			</section>
+			<!-- Same structure for the next product card -->
+			<section class="content__element">
+				<div class="content-img__novorossiysk content-img__half-height "></div>
+				<div class="content__textbox">
+					<h3 class="content__header icons__content-arrow">Морской круиз в Новороссийск</h3>
+					<div class="content__text"><span class="text__emphasis">Маршрут:</span> Сочи-Геленджик-Новороссйиск-Геленджик-Сочи</div>
+					<div class="content__text"><span class="text__emphasis">Продолжительность:</span> 13 ч. 0 мин.</div>	
+					<div class="content__price">14 800	руб.</div>
+				</div>
+			</section>
+			<!-- Same structure for the next product card -->
+			<section class="content__element">
+				<div class="content-img__sochi content-img__quarter-height">
+					<div class="content__sticker_promo">Акция</div>
+				</div>
+				<div class="content__textbox">
+					<h3 class="content__header icons__content-arrow">Обзорная морская прогулка с экскурсией</h3>
+					<div class="content__text"><span class="text__emphasis">Маршрут:</span> Сочи-Адлер-Сочи (без высадки)</div>
+					<div class="content__text"><span class="text__emphasis">Продолжительность:</span> 1 ч. 0 мин.</div>
+					<div class="content__price">5 000	руб.</div>
+					<div class="content__price content__price_discount">15 000	руб.</div>
+			</div>
+			</section>
+			<!-- Same structure for the next product card -->
+			<section class="content__element">
+				<div class="content-img__gelendzik content-img__quarter-height">
+					<div class="content__sticker_promo">Скидка<br>10%</div>
+				</div>
+				<div class="content__textbox">
+					<h3 class="content__header icons__content-arrow">Морская прогулка в Геленджик</h3>
+					<div class="content__text"><span class="text__emphasis">Маршрут:</span> Сочи-Туапсе-Геленджик</div>
+					<div class="content__text"><span class="text__emphasis">Продолжительность:</span> 12 ч. 30 мин.</div>
+					<div class="content__price">7 000	руб.</div>
+					<div class="content__price content__price_discount">10 000	руб.</div>
+				</div>
+			</section>
+			<!-- Same structure for the next product card -->	
+			<section class="content__element">
+				<div class="content-img__durso content-img__half-height"></div>
+				<div class="content__textbox">
+					<h3 class="content__header icons__content-arrow">Морская прогулка в Абрау-Дюрсо</h3>	
+					<div class="content__text"><span class="text__emphasis">Маршрут:</span> Сочи-Абрау-Дюрсо</div>
+					<div class="content__text"><span class="text__emphasis">Продолжительность:</span> 11 ч. 0 мин.</div>
+					<div class="content__price">14 800	руб.</div>
+				</div>		
+			</section>
+		</div>
+		<div class="main__button icons__button-list">Больше круизов </div>
+
+		<!-- Footer section -->
+		<!-- Footer is divided into 3 blocks -->
+		<footer class="footer">
+			<div class="main__container">
+			
+			<div class="footer__menu">
+				<a href="#" class="text__link">Вход для партнеров</a>
+				<a href="#" class="text__link">О компании</a>
+				<a href="#" class="text__link">Контакты</a>
+			</div>
+			
+			<div class="footer__social">
+				Будь на связи:	
+				<div class="social__bar">
+					<div class="icons__vk"></div>
+					<div class="icons__ok"></div>
+					<div class="icons__youtube"></div>
+					<div class="icons__insta"></div>
+				</div>
+			</div>
+
+			<div class="footer__contacts">
+				<div class="text__phone">
+					<a class="text__link" href="tel:88005006105">8 800 500-61-05</a>
+				</div>
+				<div class="text__support">
+					<a class="text__link" href="email:support@bscruise.ru">Круглосуточная поддержка</a>
+				</div>
+				<div class="text__brand">© 2016 OOO «Городские Круизы»</div>
+			</div>
+		</div>
+		</footer>
+	</body>
+</html>
