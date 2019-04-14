@@ -49,7 +49,7 @@ gulp.task("styles", styles);
 gulp.task("html", html);
 gulp.task("watch", watch);
 gulp.task('build', gulp.series(clean,
-                               gulp.parallel(styles, scripts, html, images)
+                               gulp.parallel(styles, html, images)
                                      ));
 
 function default_task(cb) {
